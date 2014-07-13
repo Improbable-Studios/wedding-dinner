@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Submit.js">
     <Files>
-      <File FileName="Assets\DragDrop.js" Line="54" Column="15" />
-      <File FileName="Assets\rotateCharacter.js" Line="8" Column="1" />
+      <File FileName="Assets\DragDrop.js" Line="1" Column="1" />
+      <File FileName="Assets\DragDrop.js" Line="1" Column="1" />
+      <File FileName="Assets\rotateCharacter.js" Line="1" Column="1" />
       <File FileName="Assets\Submit.js" Line="41" Column="131" />
-      <File FileName="Assets\TriggerLock.js" Line="1" Column="1" />
-      <File FileName="Assets\dropZones.js" Line="33" Column="1" />
+      <File FileName="Assets\dropZones.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

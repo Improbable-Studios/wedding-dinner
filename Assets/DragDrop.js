@@ -13,6 +13,7 @@
 private var myRigidbody : Rigidbody2D;
 private var myTransform : Transform;
 private var canMove = false;
+private var p1 : Vector3;
 
 var cam : Camera;
 
@@ -21,6 +22,9 @@ function Start ()
 	myRigidbody = rigidbody2D;
 	myTransform = transform;
 	cam = Camera.main;
+	p1 = cam.ViewportToWorldPoint(Vector3(1,1,cam.nearClipPlane));
+	Debug.Log(p1.x + " " + p1.y);
+
 }
 
 function FixedUpdate ()
@@ -55,5 +59,16 @@ function OnMouseUp ()
 		}
 
 	}
-	
+
+	// If player tries to move object off-screen, return object to center
+	// This will not be considered dropping on zone even if there is a drop zone in center
+	if (myRigidbody.transform.position.x > p1.x)
+		myRigidbody.transform.position.x = 0;
+	if (myRigidbody.transform.position.y > p1.y)
+		myRigidbody.transform.position.y = 0;
+	if (myRigidbody.transform.position.x < p1.x*-1)
+		myRigidbody.transform.position.x = 0;
+	if (myRigidbody.transform.position.y < p1.y*-1)
+		myRigidbody.transform.position.y = 0;
+			
 }

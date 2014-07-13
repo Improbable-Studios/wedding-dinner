@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\DragDrop.js" />
      <Compile Include="Assets\Submit.js" />
-     <Compile Include="Assets\TriggerLock.js" />
      <Compile Include="Assets\dropZones.js" />
      <Compile Include="Assets\rotateCharacter.js" />
   </ItemGroup>
